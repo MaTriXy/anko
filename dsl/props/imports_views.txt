@@ -1,8 +1,0 @@
-import org.jetbrains.anko.custom.*
-import android.view.ViewManager
-import android.view.ViewGroup.LayoutParams
-import android.app.Activity
-import android.app.Fragment
-import android.content.Context
-import android.os.Build
-import android.widget.*
