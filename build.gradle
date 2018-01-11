@@ -6,14 +6,15 @@ buildscript {
     ext.kotlinx_dom_version = '0.0.10'
     ext.kotlinx_coroutines_version = '0.15'
 
-    ext.ANKO_VERSION = '0.10.3'
-    ext.ANKO_VERSION_CODE = 103
+    ext.ANKO_VERSION = '0.10.4'
+    ext.ANKO_VERSION_CODE = 104
 
     ext.COMPILE_SDK_VERSION = 25
     ext.BUILD_TOOLS_VERSION = "25.0.2"
     ext.MIN_SDK_VERSION = 15
     ext.TARGET_SDK_VERSION = 25
     ext.SUPPORT_ARTIFACT_VERSION = "25.1.1"
+    ext.CONSTRAINT_LAYOUT_ARTIFACT_VERSION = "1.1.0-beta4"
 
     ext.PROJECT_URL = 'https://github.com/JetBrains/anko'
     ext.SCM_URL = 'https://github.com/JetBrains/anko.git'
@@ -47,6 +48,7 @@ allprojects {
     repositories {
         mavenCentral()
         jcenter()
+        maven { url "https://dl.google.com/dl/android/maven2" }
         maven { url "http://dl.bintray.com/kotlin/kotlinx.dom" }
         maven { url "http://dl.bintray.com/kotlin/kotlin-eap-1.1" }
     }
@@ -82,6 +84,7 @@ def generatedArtifacts = [
     ':generated:anko-design-coroutines',
     ':generated:anko-gridlayout-v7',
     ':generated:anko-percent',
+    ':generated:anko-constraint-layout',
     ':generated:anko-recyclerview-v7',
     ':generated:anko-recyclerview-v7-listeners',
     ':generated:anko-recyclerview-v7-coroutines',

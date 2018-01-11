@@ -188,6 +188,12 @@
       "target": [ "%support%/percent/%supportVer%/percent-%supportVer%.aar" ]
     },
     {
+      "name": "constraint-layout",
+      "type": "toolkit",
+      "platform": [ "%platforms%/android-25/android.jar" ],
+      "target": [ "dependencies/constraint-layout.aar" ]
+    },
+    {
       "name": "recyclerview-v7",
       "type": "toolkit",
       "platform": [ "%platforms%/android-25/android.jar" ],
@@ -223,7 +229,8 @@
       "android.support.v7.widget.DropDownListView",
       "android.text.ClipboardManager",
       "android.support.design.internal.*",
-      "android.support.design.widget.CheckableImageButton"
+      "android.support.design.widget.CheckableImageButton",
+      "android.support.constraint.Constraints"
     ]
   }
 }
