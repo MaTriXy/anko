@@ -3,18 +3,15 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION
-    buildToolsVersion BUILD_TOOLS_VERSION
     defaultConfig {
         minSdkVersion MIN_SDK_VERSION
         targetSdkVersion TARGET_SDK_VERSION
         versionCode ANKO_VERSION_CODE
         versionName ANKO_VERSION
     }
-    sourceSets {
-        main {
-            java.srcDirs = ['src']
-            manifest.srcFile 'AndroidManifest.xml'
-        }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
     }
 }
 
